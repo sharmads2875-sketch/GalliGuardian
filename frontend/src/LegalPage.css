@@ -1,0 +1,246 @@
+.legal-page {
+  min-height: 100vh;
+  position: relative;
+  padding: 2rem 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Inter', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-bottom: 4rem;
+}
+
+.legal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 50%, #90caf9 100%);
+  opacity: 0.95;
+}
+
+.legal-container {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.legal-header {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 16px rgba(33, 150, 243, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+.back-button {
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+  background: #e3f2fd;
+  color: #1565c0;
+  border: 2px solid #90caf9;
+  border-radius: 12px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: #bbdefb;
+  border-color: #64b5f6;
+  transform: translateX(-3px);
+}
+
+.legal-header h1 {
+  margin: 0 0 0.5rem 0;
+  color: #1565c0;
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.legal-header p {
+  margin: 0;
+  color: #64b5f6;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.legal-content {
+  background: white;
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 16px rgba(33, 150, 243, 0.1);
+}
+
+.legal-intro {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: #f8fbff;
+  border-radius: 16px;
+  border: 2px solid #e3f2fd;
+  margin-bottom: 2rem;
+}
+
+.intro-icon {
+  font-size: 3rem;
+  flex-shrink: 0;
+}
+
+.legal-intro p {
+  margin: 0;
+  color: #424242;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
+.legal-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.legal-card {
+  background: #f8fbff;
+  border: 2px solid #e3f2fd;
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.legal-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(33, 150, 243, 0.15);
+  border-color: #64b5f6;
+}
+
+.legal-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.section-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%);
+  color: white;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 1.125rem;
+  flex-shrink: 0;
+}
+
+.legal-card-header h2 {
+  margin: 0;
+  color: #1565c0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.legal-card-body {
+  padding-left: 3.5rem;
+}
+
+.legal-card-body p {
+  margin: 0;
+  color: #424242;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.legal-disclaimer {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: #fff3cd;
+  border: 2px solid #ffc107;
+  border-radius: 16px;
+  margin-top: 2rem;
+}
+
+.disclaimer-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.legal-disclaimer h3 {
+  margin: 0 0 0.5rem 0;
+  color: #856404;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.legal-disclaimer p {
+  margin: 0;
+  color: #856404;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .legal-container {
+    padding: 0;
+  }
+
+  .legal-header {
+    padding: 1.5rem;
+    position: relative;
+  }
+
+  .back-button {
+    position: relative;
+    left: auto;
+    top: auto;
+    margin-bottom: 1rem;
+  }
+
+  .legal-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .legal-content {
+    padding: 1.5rem;
+  }
+
+  .legal-intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-icon {
+    margin: 0 auto;
+  }
+
+  .legal-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .legal-card-body {
+    padding-left: 0;
+  }
+
+  .legal-disclaimer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .disclaimer-icon {
+    margin: 0 auto;
+  }
+}
